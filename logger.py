@@ -1,12 +1,12 @@
 import logging
 from datetime import datetime
 import os
-import sys
+
 
 # defining the log file name format
 file_name = f"{datetime.now().strftime('%d_%m_%Y_%H_%M_%S')}.log"
 
-dir_path = os.path.join(os.getcwd(), "logs", file_name)
+dir_path = os.path.join(os.getcwd(), "logs")
 
 # Creating directory
 os.makedirs(dir_path, exist_ok=True)
@@ -23,6 +23,6 @@ logging.basicConfig(
 
 
 
-if __name__=="__main__":
-    logging.info("HI !!")
-    logging.info("It is working fine!")
+# if __name__=="__main__":
+#     logging.info("HI !!")
+#     logging.info("It is working fine!")
